@@ -92,6 +92,11 @@ a, h2 {
 }
 
 .main-container{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.main-container{
   display: flex;
   flex-wrap: wrap;
 }
@@ -99,7 +104,7 @@ a, h2 {
 .main-container-item{
   flex: 1;
   flex-basis: calc(50% - 10px);
-  min-width: 400px;
+  min-width: 300px;
   min-height: 600px;
   display: flex;
   flex-direction: column;
@@ -253,7 +258,7 @@ background: hsl(7, 99%, 70%);
 .image-container{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 25%);
 }
 
 .image-container img{
@@ -311,21 +316,15 @@ background: hsl(7, 99%, 70%);
 
 /* mobile screen */
 
-@media(max-width: 400px) {
-
-  #navbar ul li span a{
-    background: none;
-    color: white;
-    border-radius: 0;
-  }
-
-  .nav-links{
-    border-bottom: 2px dotted #f4f4f4;
-    padding: 0;
-  }
+@media(max-width: 450px) {
 
   .nav-container ul{
-    flex-direction: column;
+    display: none;
+  }
+
+  .main-container{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
   }
 
   .main-container div p{
@@ -335,11 +334,12 @@ background: hsl(7, 99%, 70%);
     padding: 3rem;
   }
 
+
   .testimonial-container{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 100%);
   }
 
   .image-container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
   }
 }
