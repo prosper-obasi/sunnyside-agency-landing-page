@@ -325,10 +325,11 @@ background: hsl(7, 99%, 70%);
   .main-container{
     display: grid;
     grid-template-columns: repeat(1, 100%);
+    text-align: center;
   }
 
   .main-container div p{
-    width: 80%;
+    width: 100%;
   }
   .p-3{
     padding: 3rem;
