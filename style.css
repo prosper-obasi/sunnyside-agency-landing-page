@@ -280,6 +280,7 @@ background: hsl(7, 99%, 70%);
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 
 }
 
@@ -289,10 +290,16 @@ background: hsl(7, 99%, 70%);
  list-style: none;
  padding-top: 2rem;
  padding-bottom: 4rem;
+ align-items: center;
+ text-align: center;
 }
 
 .footer-links{
-  margin-right: 4rem;
+margin-right: 4rem;
+  
+}
+
+.footer-container ul li a{
   text-decoration: none;
   color: hsl(167, 40%, 24%);
 
